@@ -18,10 +18,8 @@
             var ws = new WebSocket("wss://io.dexscreener.com/dex/screener/trends");
 
             ws.onopen = function () {
-
                 // Web Socket is connected, send data using send()
-                ws.send("Message to send");
-                alert("Message is sent...");
+                // ws.send("Message to send");
             };
 
             ws.onmessage = function (evt) {
